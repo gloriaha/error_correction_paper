@@ -293,7 +293,8 @@ def plot_symm_gumbel_fullnorm_piecewise(bin_dict,anaphase_times,colorname='g',la
         if confidence:
             plt.fill_between(px,nom-2*std,nom+2*std,color='k',alpha=0.25)
         plt.plot(px,full_gumbel_offset_pdf(px, popt[0],popt[1],popt[3]),'--',linewidth=2,color=colorname)
-    
+        plt.xlabel('anaphase onset time (min)')
+        plt.ylabel('fraction of cells')
     # plot both exponential and anaphase time fit
     else:
         px = bin_dict['plot_times']
