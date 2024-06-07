@@ -343,6 +343,8 @@ def gumbel_with_ke_toff_binom_fit_pdf(times, cb, kb, ke, toff):
         initial fraction of correct attachments
     kb : float
         correction rate (units of 1/min)
+    ke : float
+        error rate (units of 1/min)
     toff : float
         offset time (min)
 
